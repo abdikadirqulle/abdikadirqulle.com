@@ -1,8 +1,10 @@
+import CurrentlyCooking from "@/components/currently-cooking"
 import { HackathonCard } from "@/components/hackathon-card"
 import BlurFade from "@/components/magicui/blur-fade"
 import BlurFadeText from "@/components/magicui/blur-fade-text"
 import { ProjectCard } from "@/components/project-card"
 import { ResumeCard } from "@/components/resume-card"
+import ServicesCard from "@/components/Services-card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { DATA } from "@/data/resume"
@@ -39,16 +41,23 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="about">
-        <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About</h2>
-        </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.summary}
-          </Markdown>
+      {/* currently cooking 👨‍🍳 */}
+      <section id="c-cooking">
+        <BlurFade delay={BLUR_FADE_DELAY * 5}>
+          <CurrentlyCooking />
         </BlurFade>
       </section>
+
+      {/* serivces */}
+      <section id="services">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 5 + 5 * 0.05}>
+            <ServicesCard />
+          </BlurFade>
+        </div>
+      </section>
+
+      {/* work expirience */}
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -74,6 +83,8 @@ export default function Page() {
           ))}
         </div>
       </section>
+
+      {/* ecducation */}
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
