@@ -13,7 +13,7 @@ const CurrentlyCooking = () => {
         <div className="flex flex-col justify-center items-start w-full mt-[0.75rem] gap-2">
           <div className="flex flex-col w-full">
             <div className="flex gap-2">
-              <a target="_blank" href="https://www.debtplanner.com/">
+              <a target="_blank" href="https://www.debtplanner.xyz/">
                 <p className=" text-sm leading-7 hover:underline">
                   debtplanner
                 </p>
