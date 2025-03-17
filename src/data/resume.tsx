@@ -8,7 +8,7 @@ export const DATA = {
   location: "Kismayo, Somalia",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Full-Stack Developer turned Tech Founder. Passionate about crafting scalable solutions and empowering communities through code. Active on LinkedIn/Twitter for tech insights and collaborations",
   summary:
     "Hello there! I'm Abdikadir Qulle, a passionate Software Developer based in Somalia. Welcome to my digital space, where creativity meets functionality, and lines of code transform into compelling solutions. I am a dedicated and passionate full stack developer committed to producing high-quality, efficient software. I am ready to leverage my vast skill set to contribute to your projects and drive success.",
   avatarUrl: "/me.jpg",

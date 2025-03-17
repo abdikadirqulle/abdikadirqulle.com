@@ -2,6 +2,7 @@ import CurrentlyCooking from "@/components/currently-cooking"
 import { HackathonCard } from "@/components/hackathon-card"
 import BlurFade from "@/components/magicui/blur-fade"
 import BlurFadeText from "@/components/magicui/blur-fade-text"
+import { Ripple } from "@/components/magicui/ripple"
 import { ProjectCard } from "@/components/project-card"
 import { ResumeCard } from "@/components/resume-card"
 import ServicesCard from "@/components/Services-card"
@@ -27,7 +28,7 @@ export default function Page() {
                 text={`Hi, I'm ${DATA.name} 👋`}
               />
               <BlurFadeText
-                className="max-w-[600px] md:text-xl"
+                className="max-w-[600px] md:text-md dark:text-gray-300"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
@@ -163,7 +164,8 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      {/* hackthons */}
+      {/* <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -205,7 +207,8 @@ export default function Page() {
             </ul>
           </BlurFade>
         </div>
-      </section>
+      </section> */}
+      {/* contact */}
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
@@ -231,6 +234,8 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+
+      {/* inta waxaa ku soo dari rabaa projects aan dhisay markii aan waa weyn ka noqdo sida legend */}
     </main>
   )
 }
